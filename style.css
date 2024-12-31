@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2e7d32; /* Changed to green */
+  margin: 20px 0;
+  font-size: 2.5rem;
+}
+
+#form {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+}
+
+#input {
+  flex: 1;
+  padding: 12px 20px;
+  border: 2px solid #e0e0e0;
+  filter: drop-shadow(0 2px 5px gold);
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#input:focus {
+  border-color: #2e7d32; /* Changed to green */
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #2e7d32; /* Changed to green */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b5e20; /* Changed to darker green */
+}
+
+ul {
+  max-width: 600px;
+  margin: 20px auto;
+  list-style: none;
+}
+
+li {
+  filter: drop-shadow(0 2px 5px green);
+  background-color: white;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
